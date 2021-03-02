@@ -1,4 +1,4 @@
-# openrtb [![GoDoc](https://godoc.org/github.com/mxmCherry/openrtb?status.svg)](https://pkg.go.dev/github.com/mxmCherry/openrtb/v14) [![Build Status](https://travis-ci.org/mxmCherry/openrtb.svg?branch=master)](https://travis-ci.org/mxmCherry/openrtb)
+# openrtb [![GoDoc](https://godoc.org/github.com/ucfunnel/openrtb-go?status.svg)](https://pkg.go.dev/github.com/ucfunnel/openrtb/v14)
 
 [OpenRTB](https://iabtechlab.com/standards/openrtb/), [AdCOM](https://iabtechlab.com/standards/openmedia) and [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) types for [Go programming language](https://golang.org/)
 
@@ -11,30 +11,30 @@
 
 Go 1.8+ is needed for proper `Ext json.RawMessage` marshaling: non-pointer `json.RawMessage` is marshaled as base64 string prior to Go 1.8.
 
-This library uses `json.RawMessage` since [v10.0.0](https://github.com/mxmCherry/openrtb/releases/tag/v10.0.0).
+This library uses `json.RawMessage` since [v10.0.0](https://github.com/ucfunnel/openrtb-go/releases/tag/v10.0.0).
 
-This library is tested with Go 1.9+ since [v12.0.0](https://github.com/mxmCherry/openrtb/releases/tag/v12.0.0).
+This library is tested with Go 1.9+ since [v12.0.0](https://github.com/ucfunnel/openrtb-go/releases/tag/v12.0.0).
 
 # Using
 
 ```bash
-go get -u "github.com/mxmCherry/openrtb/v14/..."
+go get -u "github.com/ucfunnel/openrtb-go/v14/..."
 ```
 
 ```go
 import (
-	openrtb2 "github.com/mxmCherry/openrtb/v14/openrtb2"
+	openrtb2 "github.com/ucfunnel/openrtb-go/v14/openrtb2"
 
-	openrtb3 "github.com/mxmCherry/openrtb/v14/openrtb3"
-	adcom1 "github.com/mxmCherry/openrtb/v14/adcom1"
+	openrtb3 "github.com/ucfunnel/openrtb-go/v14/openrtb3"
+	adcom1 "github.com/ucfunnel/openrtb-go/v14/adcom1"
 
-	native1 "github.com/mxmCherry/openrtb/v14/native1"
-	nreq "github.com/mxmCherry/openrtb/v14/native1/request"
-	nres "github.com/mxmCherry/openrtb/v14/native1/response"
+	native1 "github.com/ucfunnel/openrtb-go/v14/native1"
+	nreq "github.com/ucfunnel/openrtb-go/v14/native1/request"
+	nres "github.com/ucfunnel/openrtb-go/v14/native1/response"
 )
 ```
 
-This repo follows [semver](http://semver.org/) - see [releases](https://github.com/mxmCherry/openrtb/releases).
+This repo follows [semver](http://semver.org/) - see [releases](https://github.com/ucfunnel/openrtb-go/releases).
 Master always contains latest code, so better use some package manager to vendor specific version.
 
 # Guidelines
@@ -66,7 +66,7 @@ Pointer | Omitempty | When to use                                               
 
 Using both pointer and `omitempty` is mostly just to save traffic / generate more "canonical" (strict) JSON.
 
-## Documentation ([pkg.go.dev](https://pkg.go.dev/github.com/mxmCherry/openrtb/v14))
+## Documentation ([pkg.go.dev](https://pkg.go.dev/github.com/ucfunnel/openrtb-go/v14))
 - [Godoc: documenting Go code](http://blog.golang.org/godoc-documenting-go-code)
 - Each entity (type, struct key or constant) should be documented
 - Comments for entities should be copy-pasted "as-is" from OpenRTB specification (except section 5 - replace "table" with "list" there; ideally, each sentence must be on a new line)

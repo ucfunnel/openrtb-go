@@ -3,7 +3,7 @@ package response
 import (
 	"encoding/json"
 
-	"github.com/mxmCherry/openrtb/v14/native1"
+	"github.com/ucfunnel/openrtb-go/v14/native1"
 )
 
 // 5.8 Event Tracker Response Object

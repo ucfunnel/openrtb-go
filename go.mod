@@ -1,4 +1,4 @@
-module github.com/mxmCherry/openrtb/v14
+module github.com/ucfunnel/openrtb-go/v14
 
 go 1.12
 
