@@ -1,4 +1,4 @@
-# openrtb [![GoDoc](https://godoc.org/github.com/ucfunnel/openrtb-go?status.svg)](https://pkg.go.dev/github.com/ucfunnel/openrtb/v14)
+# openrtb [![GoDoc](https://godoc.org/github.com/ucfunnel/openrtb-go?status.svg)](https://pkg.go.dev/github.com/ucfunnel/openrtb-go/v14)
 
 [OpenRTB](https://iabtechlab.com/standards/openrtb/), [AdCOM](https://iabtechlab.com/standards/openmedia) and [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) types for [Go programming language](https://golang.org/)
 
