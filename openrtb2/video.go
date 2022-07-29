@@ -29,7 +29,7 @@ type Video struct {
 	//   integer; recommended
 	// Description:
 	//   Minimum video ad duration in seconds.
-	MinDuration int64 `json:"minduration,omitempty"`
+	MinDuration int64 `json:"minduration"`
 
 	// Attribute:
 	//   maxduration
@@ -186,7 +186,7 @@ type Video struct {
 	// Description:
 	//   Indicates if letter-boxing of 4:3 content into a 16:9 window is
 	//   allowed, where 0 = no, 1 = yes.
-	BoxingAllowed int8 `json:"boxingallowed,omitempty"`
+	BoxingAllowed int8 `json:"boxingallowed"`
 
 	// Attribute:
 	//   playbackmethod

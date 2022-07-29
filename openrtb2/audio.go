@@ -28,7 +28,7 @@ type Audio struct {
 	//   integer; recommended
 	// Description:
 	//   Minimum audio ad duration in seconds.
-	MinDuration int64 `json:"minduration,omitempty"`
+	MinDuration int64 `json:"minduration"`
 
 	// Attribute:
 	//   maxduration
