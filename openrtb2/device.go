@@ -26,6 +26,16 @@ type Device struct {
 	UA string `json:"ua,omitempty"`
 
 	// Attribute:
+	//   sua
+	// Type:
+	//   UserAgent object
+	// Description:
+	//   Structured user agent information defined by a UserAgent object (see Section 3.2.29).
+	//	 If both ‘ua’ and ‘sua’ are present in the bid request, ‘sua’ should be considered the more accurate representation of the device attributes.
+	//	 This is because the ‘ua’ may contain a frozen or reduced user agent string.
+	SUA *UserAgent `json:"sua,omitempty"`
+
+	// Attribute:
 	//   geo
 	// Type:
 	//   object; recommended
