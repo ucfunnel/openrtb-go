@@ -25,7 +25,7 @@ type BrandVersion struct {
 	//   string array
 	// Description:
 	//   A sequence of version components, in descending hierarchical order (major, minor, micro, …)
-	Version []string `json:"name,omitempty"`
+	Version []string `json:"version,omitempty"`
 
 	// Attribute:
 	//   ext
