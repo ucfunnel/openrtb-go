@@ -223,6 +223,24 @@ type Content struct {
 	Data []Data `json:"data,omitempty"`
 
 	// Attribute:
+	//   channel
+	// Type:
+	//   object
+	// Description:
+	//   Details about the channel (Section 3.2.24) the content is on.
+	//   oRTB2.6
+	Channel *Channel `json:"channel,omitempty"`
+
+	// Attribute:
+	//   network
+	// Type:
+	//   object
+	// Description:
+	//   Details about the network (Section 3.2.23) the content is on.
+	//   oRTB2.6
+	Network *Network `json:"network,omitempty"`
+
+	// Attribute:
 	//   ext
 	// Type:
 	//   object

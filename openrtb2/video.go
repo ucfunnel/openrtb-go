@@ -95,6 +95,14 @@ type Video struct {
 	Placement VideoPlacementType `json:"placement,omitempty"`
 
 	// Attribute:
+	//   plcmt
+	// Type:
+	//   integer
+	// Description:
+	//   The release of updated definitions in AdCOM List: Plcmt Subtypes – Video and a new attribute (plcmt in Object: Video) to give publishers a way to signal video inventory in a way that more closely aligns with the updated ad format guidelines without breaking existing workstreams.
+	Plcmt VideoPlcmtType `json:"plcmt,omitempty"`
+
+	// Attribute:
 	//   linearity
 	// Type:
 	//   integer
