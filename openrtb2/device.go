@@ -230,6 +230,25 @@ type Device struct {
 	IFA string `json:"ifa,omitempty"`
 
 	// Attribute:
+	//   ifa_type
+	// Type:
+	//   string
+	// Description:
+	//   The ID for the Advertising type, which is defined in the following 
+	//   guidelines from the IAB: https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf.
+	//   Supported values include the following:
+	//      dpid (generic device-provided ID)
+	//      rida (Roku ID)
+	//      aaid (Android ID)
+	//      idfa (Apple ID)
+	//      afai (Amazon Fire ID)
+	//      msai (Microsoft ID)
+	//      ppid (publisher-provided ID)
+	//      sspid (SSP-provided ID)
+	//      sessionid (session ID or synthetic ID)
+	IFAType string `json:"ifa_type,omitempty"`
+
+	// Attribute:
 	//   didsha1
 	// Type:
 	//   string
